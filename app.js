@@ -8,7 +8,7 @@ const cnt=(a,k)=>a.reduce((m,x)=>(m[k(x)]=(m[k(x)]||0)+1,m),{});
 const median=a=>{a=[...a].sort((x,y)=>x-y);const n=a.length;return n?(n%2?a[(n-1)/2]:(a[n/2-1]+a[n/2])/2):null};
 const teamId=c=>c.league+'|'+c.team_key;
 const isPar=c=>/refractor|prizm|parallel|variation|fractor/i.test(c.set)&&!/^base$/i.test(c.set);
-function compFor(s,c){if(c.market_price!=null)return {price:c.market_price,net_est:tcgNet(c.market_price),as_of:c.price_date,url:'https://api.tcgdex.net/v2/en/cards',source:'TCGplayer market (TCGdex)'};return (s.comps||[]).find(x=>x.card_no==c.card_no&&x.player==c.player&&(!x.set||x.set==c.set))}
+function compFor(s,c){if(c.market_price!=null)return {price:c.market_price,net_est:tcgNet(c.market_price),as_of:c.price_date,url:'https://api.tcgdex.net/v2/en/cards',source:'eBay sold (PriceCharting)'};return (s.comps||[]).find(x=>x.card_no==c.card_no&&x.player==c.player&&(!x.set||x.set==c.set))}
 const TIERS={SP:['sp','Short Print','rarer than 1 per case, up to 1 per 5 cases (1 < X ≤ 5)'],SSP:['ssp','SSP','1 per 5 to 25 cases (5 < X ≤ 25)'],Grail:['gr','Grail','rarer than 1 per 25 cases (X > 25)']};
 function tierTag(c){if(!c.tier)return '';const t=TIERS[c.tier];return `<span class="tag ${t[0]}" title="${t[1]}: ${t[2]}">${t[1].toUpperCase()} ~1/${c.x_cases} cs</span>`}
 const LEGEND=`<div class="m"><div class="d"><b>Rarity tiers</b> (hobby rate, X = cases per one pull of that insert/parallel run): ${Object.values(TIERS).map(t=>`<span class="tag ${t[0]}">${t[1].toUpperCase()}</span> ${t[2]}`).join(' · ')} · Cards at 1+ per case get no tier · <span class="tag u">odds ?</span> no published odds.</div></div>`;
