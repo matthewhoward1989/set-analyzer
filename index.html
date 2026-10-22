@@ -1,19 +1,35 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Pull Report · Set Analyzer</title><meta name="description" content="The Pull Report Set Analyzer (free beta): searchable checklists, odds-based rarity tiers, team breakdowns and real sold break-spot prices. Market data, not buying advice."><meta property="og:title" content="The Pull Report · Set Analyzer (Beta)"><meta property="og:description" content="Checklists, rarity tiers, team breakdowns and real sold break-spot prices. Data, not buying advice."><meta property="og:type" content="website"><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@ThePullReport2"><meta name="theme-color" content="#0b1f3a"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.png" type="image/png"><link rel="stylesheet" href="style.css"><script src="data/all.js"></script><script src="app.js"></script></head><body><main>
-<h1>Set Analyzer</h1><div class="sub">Searchable checklists across sports, with parallels, odds-based SSPs, team breakdowns and net-of-fees comps where we have them.</div>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Pull Report · Set Analyzer</title><meta name="description" content="The Pull Report Set Analyzer (free beta): searchable checklists, odds-based rarity tiers, team breakdowns and real sold break-spot prices. Market data, not buying advice."><meta property="og:title" content="The Pull Report · Set Analyzer (Beta)"><meta property="og:description" content="Checklists, rarity tiers, team breakdowns and real sold break-spot prices. Data, not buying advice."><meta property="og:type" content="website"><meta property="og:image" content="og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@ThePullReport2"><meta name="theme-color" content="#0b1f3a"><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="icon" href="favicon.png" type="image/png"><link rel="stylesheet" href="style.css"><script src="data/home.js"></script><script src="app.js"></script></head><body><main>
+<section class="hero"><h1>Every checklist, rarity tier and real sold price for this year's sets, net of fees.</h1>
+<p id="stats">Free beta · baseball, football, basketball, hockey, Pokémon, Disney and more.</p>
+<div class="us" role="combobox" aria-haspopup="listbox" aria-owns="dd" aria-expanded="false" id="usw"><label for="us" class="skip">Search sets, players, characters and teams</label>
+<input id="us" type="search" autocomplete="off" enterkeyhint="search" placeholder="Search a set, player, character or team…" aria-autocomplete="list" aria-controls="dd"><div class="dd" id="dd" role="listbox" hidden></div></div></section>
+<h2>Browse by category</h2><div class="tiles" id="tiles"></div>
+<h2>Newest releases</h2><div class="row" id="newest"></div>
+<h2>Biggest chases right now <span class="count">eBay sold medians (n ≥ 3), net of fees</span></h2><div class="row" id="chase"></div>
+<h2>How to use</h2><div class="steps"><div><b>Find it.</b> Search a set, player or team, or tap a category.</div><div><b>Check rarity.</b> Each set page tags cards Short Print, SSP or Grail from published hobby odds.</div><div><b>See real prices.</b> Comps are sold medians with sample size, shown net of fees.</div></div>
+<p><a class="more" href="about.html">How we calculate tiers, fees and prices: About &amp; methodology →</a></p>
 <div class="note">This is market data, not a recommendation. Every number is cited on its set page, and gaps are marked in <span class="gap">amber</span>.</div>
-<div class="grid" id="hub"></div><h2>Definitions</h2><div class="m"><div class="d"><b>Rarity tiers</b> use the published <b>hobby</b> pack odds of an insert or parallel run. Per case = packs per case ÷ odds, and X = 1 ÷ per case (cases per pull).<br>
-<span class="tag sp">SHORT PRINT</span> 1 &lt; X ≤ 5 (rarer than 1 per case, up to 1 per 5 cases) · <span class="tag ssp">SSP</span> 5 &lt; X ≤ 25 · <span class="tag gr">GRAIL</span> X &gt; 25 · no tier at 1+ per case.<br>
-<b>Example</b>: 2026 Bowman Chrome Hobby has 6 packs × 12 boxes = 72 packs per case. A 1:288 insert is 72 ÷ 288 = 0.25 per case, about 1 per 4 cases, so Short Print. A 1:960 parallel is about 1 per 13 cases, so SSP. A 1:2,006 auto is about 1 per 28 cases, so Grail.<br>
-Odds apply to the whole run (any card in it), not to one named card. <span class="tag u">odds ?</span> means no published odds were found, and we don't guess. <span class="tag nch">named CH</span> is a manufacturer's or breaker's "case hit" label, shown only where explicitly published and not used in metrics.</div></div>
-<h2>Search all sets</h2><div class="ctl"><input id="q" placeholder="Player, team, card # or set (e.g. Matvei Michkov, Flyers, CPA-LH)"></div><div class="count" id="count"></div><div id="res"></div>
-</main><script>header('index');
-const tot=SETS.reduce((a,s)=>a+s.cards.length,0);
-$('#hub').innerHTML=`<a class="m" href="sets.html"><h3>Sets</h3><div class="v">${SETS.length} sets</div><div class="d">${tot.toLocaleString()} cards · each with its own Top 5</div></a>
-<a class="m" href="teams.html"><h3>Teams</h3><div class="v">${new Set(SETS.filter(s=>s.kind!='nonsport').flatMap(s=>s.cards.map(teamId))).size} teams</div><div class="d">Every card from one team, grouped by set</div></a>
-<a class="m" href="players.html"><h3>Players</h3><div class="v">${new Set(SETS.flatMap(s=>s.cards.map(c=>c.player))).size.toLocaleString()} players</div><div class="d">Sets each player appears in, with auto and case-hit badges</div></a><a class="m" href="breakers.html"><h3>Breakers</h3><div class="v">Break desk</div><div class="d">Box quick keys, real team-spot prices, labeled model estimates</div></a>`;
-const ALL=SETS.flatMap(s=>s.cards.map(c=>({...c,set_id:s.id,set_name:s.name,hay:`${c.card_no} ${c.player} ${c.team} ${c.team_key} ${c.set} ${s.name}`.toLowerCase()})));
-function go(){const q=$('#q').value.trim().toLowerCase();if(q.length<2){$('#res').innerHTML='';$('#count').textContent='Type at least 2 characters.';return}
- const terms=q.split(/\s+/),r=ALL.filter(c=>terms.every(t=>c.hay.includes(t)));
- const n=table('g',[['set_name','Release',c=>`<a href="set.html?id=${c.set_id}">${esc(c.set_name)}</a>`],['card_no','Card #'],['player','Player',c=>`<a href="players.html?p=${encodeURIComponent(c.player)}">${esc(c.player)}</a>${badges(c)}`],['team','Team',c=>`<a href="teams.html?t=${encodeURIComponent(teamId(c))}">${esc(c.team)}</a>`],['set','Subset / variation']],r.slice(0,500),$('#res'));
- $('#count').textContent=r.length+' matches'+(r.length>500?' (showing the first 500)':'')}
-$('#q').addEventListener('input',go);if(qs('q')){$('#q').value=qs('q')};go();</script></body></html>
+</main><script>header('index');const H=window.PR_HOME,HS=H.sets;
+$('#stats').textContent=`Free beta · ${HS.length} sets · ${H.ncards.toLocaleString()} cards · ${H.nplayers.toLocaleString()} players & characters · ${H.nteams} teams.`;
+$('#tiles').innerHTML=CATS.map(([k,l,i])=>{const n=HS.filter(s=>s.cat==k).length;return `<a class="tile" href="sets.html?cat=${k}"><span class="ic" aria-hidden="true">${i}</span><b>${l}</b><small>${n} set${n==1?'':'s'}</small></a>`}).join('');
+const card=s=>`<a class="m" href="set.html?id=${s.id}"><h3>${esc(s.sport)} · ${esc(s.league)}</h3><div class="v">${esc(s.name)}</div><div class="s">${s.pre?'<span class="tag pre">PRE-RELEASE</span> ':''}${s.pre?'Scheduled':'Released'} ${esc((s.release||'').replace(' (scheduled)',''))} · ${s.cards.toLocaleString()} cards</div></a>`;
+$('#newest').innerHTML=[...HS].sort((a,b)=>b.date.localeCompare(a.date)).slice(0,8).map(card).join('');
+$('#chase').innerHTML=H.chase.map(c=>`<a class="m" href="set.html?id=${c.set_id}&tab=comps"><h3>${esc(c.set_name)}</h3><div class="v">${esc(c.player)}</div><div class="d">${money(c.price)} sold → <b>${money(c.net)} net</b></div><div class="s">${esc(c.card.replace(/\s*\(.*$/,''))} · n=${c.n} · ${esc(c.src)}</div></a>`).join('')+'<div class="s count" style="align-self:end">Prices: <a href="https://www.sportscardspro.com">SportsCardsPro</a> / <a href="https://www.pricecharting.com">PriceCharting</a> sold data.</div>';
+// universal search: sets from home.js, players/teams lazy-loaded
+let SI=null,ld=null,sel=-1;const inp=$('#us'),dd=$('#dd');
+function load(){if(SI||ld)return ld;ld=new Promise(r=>{const s=document.createElement('script');s.src='data/search.js';s.onload=()=>{SI=window.PR_SEARCH;r();go()};document.head.appendChild(s)});return ld}
+const CL=Object.fromEntries(CATS.map(c=>[c[0],c[1]]));
+function go(){const q=inp.value.trim().toLowerCase();sel=-1;if(q.length<2){dd.hidden=true;$('#usw').setAttribute('aria-expanded','false');return}
+ const T=q.split(/\s+/),hit=s=>T.every(t=>s.toLowerCase().includes(t));
+ const S=HS.filter(s=>hit(s.name+' '+s.sport+' '+s.league)).slice(0,6).map(s=>[`set.html?id=${s.id}`,s.name,`${s.cards.toLocaleString()} cards`]);
+ let P=[],M=[];if(SI){P=SI.p.filter(p=>hit(p[0])).sort((a,b)=>b[1]-a[1]).slice(0,8).map(p=>[`players.html?p=${encodeURIComponent(p[0])}`,p[0],`${p[2].split('/').map(c=>CL[c]||c).join(', ')} · ${p[1]} set${p[1]>1?'s':''}`]);
+  M=SI.t.filter(t=>hit(t[0].split('|')[1]+' '+t[0].split('|')[0])).sort((a,b)=>b[2]-a[2]).slice(0,6).map(t=>[`teams.html?t=${encodeURIComponent(t[0])}`,t[0].split('|')[1],`${t[0].split('|')[0]} · ${t[2].toLocaleString()} cards`])}
+ const grp=(h,a)=>a.length?`<h4>${h}</h4>`+a.map(([u,l,m])=>`<a role="option" href="${u}"><span>${esc(l)}</span><small>${esc(m)}</small></a>`).join(''):'';
+ dd.innerHTML=grp('Sets',S)+grp('Players & characters',P)+grp('Teams',M)+(SI?'':'<div class="empty">Loading players and teams…</div>')+(SI&&!S.length&&!P.length&&!M.length?'<div class="empty">No matches. Try a last name or team city.</div>':'');
+ dd.hidden=false;$('#usw').setAttribute('aria-expanded','true')}
+inp.addEventListener('focus',load,{once:true});inp.addEventListener('input',()=>{load();go()});
+inp.addEventListener('keydown',e=>{const a=[...dd.querySelectorAll('a')];if(e.key=='ArrowDown'||e.key=='ArrowUp'){e.preventDefault();sel=(sel+(e.key=='ArrowDown'?1:-1)+a.length)%a.length;a.forEach((x,i)=>x.classList.toggle('hl',i==sel));a[sel]&&a[sel].scrollIntoView({block:'nearest'})}
+ else if(e.key=='Enter'){const t=a[sel>=0?sel:0];if(t){e.preventDefault();location.href=t.href}}else if(e.key=='Escape'){dd.hidden=true}});
+document.addEventListener('click',e=>{if(!$('#usw').contains(e.target))dd.hidden=true});
+if(qs('q')){inp.value=qs('q');load()}
+</script></body></html>
