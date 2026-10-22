@@ -63,3 +63,4 @@ header.top .brand img{height:44px;width:auto;border-radius:6px}
 header.top .brand .sa{color:var(--teal);text-transform:none}
 a{color:var(--link)}.gap{color:var(--coral)}
 .hero h1{color:#fff}
+button.more{display:block;min-height:44px;margin:10px auto;padding:10px 18px;font:inherit;cursor:pointer;border-radius:8px}

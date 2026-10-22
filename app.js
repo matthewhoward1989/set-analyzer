@@ -1,6 +1,12 @@
 const tcgNet=p=>Math.round((p-Math.min(p*0.1075,75)-(p*0.025+0.30))*100)/100;
 // Shared helpers for The Pull Report Set Analyzer (vanilla JS, offline; data from data/all.js)
-const D=window.PR_DATA||window.PR_HOME||{sets:[]},SETS=window.PR_DATA?D.sets:[];
+let D=window.PR_DATA||window.PR_HOME||{sets:[]},SETS=window.PR_DATA?D.sets:[];
+// Compact data loader: files call PRL({...}); cards are {k:[key lists],r:[[keyIdx,...values]]}
+function decCards(e){if(Array.isArray(e))return e;return e.r.map(r=>{const k=e.k[r[0]],o={};for(let i=0;i<k.length;i++)o[k[i]]=r[i+1];return o})}
+function PRL(o){o.sets.forEach(s=>s.cards=decCards(s.cards));window.PR_DATA=o;D=o;SETS=o.sets}
+const dataUrl=p=>'data/'+p+'.js?v='+(window.PRV||'');
+function loadSync(p){document.write('<script src="'+dataUrl(p)+'"><\/script>')}
+function loadAsync(p){return new Promise((ok,no)=>{const s=document.createElement('script');s.src=dataUrl(p);s.onload=()=>ok(window.PR_DATA);s.onerror=no;document.head.appendChild(s)})}
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const money=n=>n===''||n==null?'—':'$'+Number(n).toFixed(2);
 const qs=k=>new URLSearchParams(location.search).get(k)||'';
@@ -24,7 +30,11 @@ const CATOF={'Baseball':'baseball','Football':'football','Basketball':'basketbal
 function crumbs(a){const m=document.querySelector('main');m.insertAdjacentHTML('afterbegin',`<nav class="crumbs" aria-label="Breadcrumb"><ol>${a.map(([l,h],i)=>`<li>${h&&i<a.length-1?`<a href="${h}">${esc(l)}</a>`:`<span aria-current="page">${esc(l)}</span>`}</li>`).join('')}</ol></nav>`)}
 let SORT={};
 function table(id,cols,rows,el){const st=SORT[id]||{};const r=[...rows];if(st.k)r.sort((a,b)=>{let x=a[st.k],y=b[st.k];if(x===''||x==null)return 1;if(y===''||y==null)return -1;if(typeof x=='number'&&typeof y=='number')return (x-y)*st.d;return String(x).localeCompare(String(y),undefined,{numeric:true})*st.d});
- el.innerHTML=`<table><thead><tr>${cols.map(([k,l])=>`<th data-k="${k}">${l}${st.k==k?(st.d>0?' ▲':' ▼'):''}</th>`).join('')}</tr></thead><tbody>${r.map(x=>`<tr>${cols.map(([k,l,f])=>`<td>${f?f(x):esc(x[k])}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+ const row=x=>`<tr>${cols.map(([k,l,f])=>`<td>${f?f(x):esc(x[k])}</td>`).join('')}</tr>`,CH=200;let shown=Math.min(r.length,CH);
+ el.innerHTML=`<table><thead><tr>${cols.map(([k,l])=>`<th data-k="${k}">${l}${st.k==k?(st.d>0?' ▲':' ▼'):''}</th>`).join('')}</tr></thead><tbody>${r.slice(0,shown).map(row).join('')}</tbody></table>`;
+ if(shown<r.length){const tb=el.querySelector('tbody'),b=document.createElement('button');b.className='more';const lab=()=>b.textContent=`Show more rows (${shown} of ${r.length} shown)`;lab();el.appendChild(b);
+  const more=()=>{tb.insertAdjacentHTML('beforeend',r.slice(shown,shown+CH).map(row).join(''));shown=Math.min(r.length,shown+CH);if(shown>=r.length){b.remove();io&&io.disconnect()}else lab()};b.onclick=more;
+  const io=window.IntersectionObserver?new IntersectionObserver(e=>{if(e[0].isIntersecting&&b.isConnected)more()},{rootMargin:'600px'}):null;io&&io.observe(b)}
  el.querySelectorAll('th').forEach(th=>th.onclick=()=>{const k=th.dataset.k;SORT[id]={k,d:st.k==k?-st.d:1};table(id,cols,rows,el)});return r.length}
 function top5(s){const NS=s.kind=='nonsport',G=NS?(c=>c.player):(c=>c.team),W=NS?'character':'team',C=s.cards,P=s.comps||[],N=C.length,out=[];
  if(P.length){const b=P.reduce((a,x)=>x.price>a.price?x:a);out.push(['Biggest chase (by sold comps)',`${b.player} #${b.card_no}`,`${esc(b.card)}: ${money(b.price)}, ~${money(b.net_est)} net (est.)`,`${esc(b.source)}, ${b.as_of}. Method: highest comp among ${P.length} comped cards. <span class="gap">Comps cover only the priced chase cards; n=1 prices are thin.</span> ${esc(b.basis||"")}`])}
