@@ -6,6 +6,7 @@ function decCards(e){if(Array.isArray(e))return e;return e.r.map(r=>{const k=e.k
 function PRL(o){o.sets.forEach(s=>s.cards=decCards(s.cards));window.PR_DATA=o;D=o;SETS=o.sets}
 const dataUrl=p=>'data/'+p+'.js?v='+(window.PRV||'');
 function loadSync(p){document.write('<script src="'+dataUrl(p)+'"><\/script>')}
+function loadScript(src){return new Promise((ok,no)=>{const s=document.createElement('script');s.src=src+(src.includes('?')?'':'?v='+(window.PRV||''));s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
 function loadAsync(p){return new Promise((ok,no)=>{const s=document.createElement('script');s.src=dataUrl(p);s.onload=()=>ok(window.PR_DATA);s.onerror=no;document.head.appendChild(s)})}
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const money=n=>n===''||n==null?'—':'$'+Number(n).toFixed(2);
