@@ -1,1 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#0a1a31"/><rect x="60" y="60" width="140" height="140" rx="24" fill="#12ada9"/><text x="130" y="155" font-family="Arial" font-size="64" font-weight="700" text-anchor="middle" fill="#0a1a31">PR</text><text x="60" y="320" font-family="Arial" font-size="72" font-weight="700" fill="#fff">The Pull Report</text><text x="60" y="410" font-family="Arial" font-size="52" fill="#5eead4">Set Analyzer · Free Beta</text><text x="60" y="520" font-family="Arial" font-size="32" fill="#cbd5e1">Checklists · rarity tiers · team breakdowns · real sold break spots</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+<rect width="1200" height="630" fill="#0B1F44"/>
+<rect width="1200" height="8" fill="#C8102E"/>
+<rect y="622" width="1200" height="8" fill="#C8102E"/>
+<rect x="60" y="60" width="140" height="140" rx="16" fill="#14305F" stroke="#FFFFFF" stroke-width="3"/>
+<text x="130" y="155" font-family="Arial" font-size="64" font-weight="700" text-anchor="middle" fill="#FFFFFF">SA</text>
+<text x="230" y="120" font-family="Arial" font-size="48" font-weight="700" fill="#FFFFFF">THE SET ANALYZER</text>
+<text x="230" y="170" font-family="Arial" font-size="28" fill="#7EB6FF">Free Beta · Checklists · Rarity · Comps</text>
+<text x="60" y="320" font-family="Arial" font-size="48" font-weight="700" fill="#FFFFFF">Every checklist, rarity tier,</text>
+<text x="60" y="380" font-family="Arial" font-size="48" font-weight="700" fill="#FFFFFF">and real sold price — net of fees.</text>
+<text x="60" y="470" font-family="Arial" font-size="28" fill="#A8B8D0">Odds only when published. Gaps marked. No guessing.</text>
+</svg>

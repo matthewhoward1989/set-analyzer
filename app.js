@@ -1,12 +1,11 @@
 const tcgNet=p=>Math.round((p-Math.min(p*0.1075,75)-(p*0.025+0.30))*100)/100;
-// Shared helpers for The Pull Report Set Analyzer (vanilla JS, offline; data from data/all.js)
+// Shared helpers for The Set Analyzer (vanilla JS, offline; data from data/all.js)
 let D=window.PR_DATA||window.PR_HOME||{sets:[]},SETS=window.PR_DATA?D.sets:[];
 // Compact data loader: files call PRL({...}); cards are {k:[key lists],r:[[keyIdx,...values]]}
 function decCards(e){if(Array.isArray(e))return e;return e.r.map(r=>{const k=e.k[r[0]],o={};for(let i=0;i<k.length;i++)o[k[i]]=r[i+1];return o})}
 function PRL(o){o.sets.forEach(s=>s.cards=decCards(s.cards));window.PR_DATA=o;D=o;SETS=o.sets}
 const dataUrl=p=>'data/'+p+'.js?v='+(window.PRV||'');
 function loadSync(p){document.write('<script src="'+dataUrl(p)+'"><\/script>')}
-function loadScript(src){return new Promise((ok,no)=>{const s=document.createElement('script');s.src=src+(src.includes('?')?'':'?v='+(window.PRV||''));s.onload=ok;s.onerror=no;document.head.appendChild(s)})}
 function loadAsync(p){return new Promise((ok,no)=>{const s=document.createElement('script');s.src=dataUrl(p);s.onload=()=>ok(window.PR_DATA);s.onerror=no;document.head.appendChild(s)})}
 const $=s=>document.querySelector(s),esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const money=n=>n===''||n==null?'—':'$'+Number(n).toFixed(2);
@@ -22,7 +21,7 @@ const LEGEND=`<div class="m"><div class="d"><b>Rarity tiers</b> (hobby rate, X =
 const tierCounts=a=>['SP','SSP','Grail'].map(t=>`${TIERS[t][1]} ${a.filter(c=>c.tier==t).length}`).join(' · ');
 function badges(c){return (c.rc?'<span class="tag">RC</span>':'')+(c.first_bowman?'<span class="tag f">1st</span>':'')+(c.auto?'<span class="tag au">AUTO</span>':'')+tierTag(c)+(c.odds=='unknown'?'<span class="tag u" title="No published odds found">odds ?</span>':'')+(c.named_case_hit?'<span class="tag nch" title="Named case hit as published by the source">named CH</span>':'')}
 function header(active){const L=[['index','Home'],['sets','Sets'],['players','Players'],['teams','Teams'],['breakers','Breakers'],['about','About']];
- document.body.insertAdjacentHTML('afterbegin',`<a class="skip" href="#main">Skip to content</a><header class="top"><div class="bar"><a class="brand" href="index.html"><img src="logo.png" alt="" width="40" height="44">The Pull Report <span class="sa">· Set Analyzer</span></a> <span class="beta">BETA</span><button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mainnav"><span></span><span></span><span></span></button></div><nav id="mainnav" aria-label="Main">${L.map(([h,l])=>`<a href="${h}.html" class="${h==active?'on':''}"${h==active?' aria-current="page"':''}>${l}</a>`).join('')}</nav></header>`);
+ document.body.insertAdjacentHTML('afterbegin',`<a class="skip" href="#main">Skip to content</a><header class="top"><div class="bar"><a class="brand" href="index.html"><img src="logo.png" alt="" width="40" height="44">The Set Analyzer</a> <span class="beta">BETA</span><button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mainnav"><span></span><span></span><span></span></button></div><nav id="mainnav" aria-label="Main">${L.map(([h,l])=>`<a href="${h}.html" class="${h==active?'on':''}"${h==active?' aria-current="page"':''}>${l}</a>`).join('')}</nav></header>`);
  const b=document.getElementById('burger');b.onclick=()=>{const o=document.body.classList.toggle('navopen');b.setAttribute('aria-expanded',o)};
  const m=document.querySelector('main');if(m&&!m.id)m.id='main';
  document.body.insertAdjacentHTML('beforeend',`<footer>Market data only, not a recommendation to buy, sell, or break. Net figures: <b>sports cards</b> (eBay) = sale − 13.25% − $0.40 − supplies (~$1 raw / ~$3 graded, estimate); <b>Pokémon / TCG</b> (standard TCG marketplace seller fee formula) = market − 10.75% commission (capped at $75 per product) − 2.5% transaction fee − $0.30, before shipping and tax. Data built ${D.built}. Sources and gaps are listed on each set page. <a href="about.html">About &amp; methodology</a> · <a href="https://matthowardcards.substack.com">Substack: The Pull Report</a> · <a href="https://x.com/ThePullReport2">X @ThePullReport2</a></footer>`)}
