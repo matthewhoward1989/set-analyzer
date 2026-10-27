@@ -1,0 +1,42 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "16 \u00d7 8",
+   "Cards per box": "128",
+   "Boxes per case": "16",
+   "Autographs": "~1.2",
+   "Non-numbered parallels / box": "~1 in 7.2 boxes",
+   "Inserts / box": "~8.2",
+   "Exclusive parallels": "8 \u00b7 see them",
+   "lowest_ask": "$159.99"
+  },
+  {
+   "format": "Value Box",
+   "Packs \u00d7 cards": "8 \u00d7 5",
+   "Cards per box": "40",
+   "Boxes per case": "40",
+   "Autographs": "~1 in 16 boxes",
+   "Non-numbered parallels / box": "~1 per 2\u20133 cases",
+   "Inserts / box": "~2",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": "$25.00"
+  },
+  {
+   "format": "Mega Box",
+   "Packs \u00d7 cards": "18 \u00d7 8",
+   "Cards per box": "144",
+   "Boxes per case": "20",
+   "Autographs": "~1 in 3.3 boxes",
+   "Non-numbered parallels / box": "~1 per case",
+   "Inserts / box": "~9.1",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": "$49.00"
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "",
+  "fetched": "2026-10-20"
+ }
+}

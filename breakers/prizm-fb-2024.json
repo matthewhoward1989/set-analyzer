@@ -1,0 +1,168 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby Box",
+   "Packs \u00d7 cards": "12 \u00d7 12",
+   "Cards per box": "144",
+   "Boxes per case": "12",
+   "Autographs": "2 guaranteed",
+   "Exclusive parallels": "133 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Lazer Blaster Box",
+   "Packs \u00d7 cards": "6 \u00d7 4",
+   "Cards per box": "24",
+   "Boxes per case": "20",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Neon Green Pulsar Mega Box",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "5 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Retail Box",
+   "Packs \u00d7 cards": "24 \u00d7 4",
+   "Cards per box": "96",
+   "Boxes per case": "50",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "10 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Choice Box",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "16 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "No Huddle Box",
+   "Packs \u00d7 cards": "10 \u00d7 8",
+   "Cards per box": "80",
+   "Boxes per case": "20",
+   "Autographs": "1 guaranteed",
+   "Exclusive parallels": "26 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Hobby Blaster Box",
+   "Packs \u00d7 cards": "6 \u00d7 4",
+   "Cards per box": "24",
+   "Boxes per case": "20",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Hobby Mega Box",
+   "Packs \u00d7 cards": "6 \u00d7 7",
+   "Cards per box": "42",
+   "Boxes per case": "20",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "4 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Green Wave Hanger Box",
+   "Packs \u00d7 cards": "1 \u00d7 20",
+   "Cards per box": "20",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "9 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Value Pack Box",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "10 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Sparkle Pack",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "11 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Premium Set",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "4 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Pink Wave Hanger Box",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "3 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Pink Pulsar Mega Box",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "5 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "FOTL Box",
+   "Packs \u00d7 cards": "12 \u00d7 12",
+   "Cards per box": "144",
+   "Boxes per case": "\u2014",
+   "Autographs": "2 guaranteed",
+   "Exclusive parallels": "18 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Disco Blaster Box",
+   "Packs \u00d7 cards": "6 \u00d7 4",
+   "Cards per box": "24",
+   "Boxes per case": "20",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "International Box",
+   "Packs \u00d7 cards": "\u2014",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "\u2014",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "https://cardsmithsbreaks.com/full-checklist/2024-panini-prizm-football/",
+  "fetched": "2026-10-26"
+ },
+ "gaps": [
+  "No HobbyMonitor/eBay team-spot market prices recorded for this set yet.",
+  "Box street prices on the source page were empty at fetch time (odds/config may still be incomplete on Cardsmiths)."
+ ],
+ "checked": [],
+ "market": {}
+}

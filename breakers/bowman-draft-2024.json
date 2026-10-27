@@ -1,0 +1,45 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby Box",
+   "Packs \u00d7 cards": "12 \u00d7 32",
+   "Cards per box": "384",
+   "Boxes per case": "8",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "~4",
+   "Non-numbered parallels / box": "~15",
+   "Inserts / box": "~41",
+   "Exclusive parallels": "8 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Jumbo Box",
+   "Packs \u00d7 cards": "5 \u00d7 120",
+   "Cards per box": "600",
+   "Boxes per case": "6",
+   "Autographs": "5 guaranteed",
+   "Numbered / box": "~6",
+   "Non-numbered parallels / box": "~6",
+   "Inserts / box": "~30",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  },
+  {
+   "format": "HTA Choice Box",
+   "Packs \u00d7 cards": "1 \u00d7 3",
+   "Cards per box": "3",
+   "Boxes per case": "6",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "\u2014",
+   "Non-numbered parallels / box": "\u2014",
+   "Inserts / box": "\u2014",
+   "Exclusive parallels": "5 \u00b7 see them",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "",
+  "fetched": "2026-10-20"
+ }
+}

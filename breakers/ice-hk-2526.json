@@ -1,0 +1,20 @@
+{
+ "market": [],
+ "market_source": "",
+ "checked": [],
+ "gaps": [],
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "1 \u00d7 8",
+   "Cards per box": "8",
+   "Boxes per case": "16",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks product page",
+  "url": "https://cardsmithsbreaks.com/full-checklist/2025-26-upper-deck-ice-hockey/",
+  "fetched": "2026-10-27"
+ }
+}

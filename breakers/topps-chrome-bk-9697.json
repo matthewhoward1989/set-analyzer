@@ -1,0 +1,24 @@
+{
+  "boxes": [
+    {
+      "format": "Retail",
+      "Packs \u00d7 cards": "20 \u00d7 4",
+      "Cards per box": "80",
+      "Boxes per case": "",
+      "lowest_ask": ""
+    }
+  ],
+  "box_source": {
+    "name": "Cardboard Connection / Steel City \u2014 1996-97 Topps Chrome Basketball (20 four-card packs per box)",
+    "url": "https://www.cardboardconnection.com/1996-97-topps-chrome-basketball-cards",
+    "fetched": "2026-10-25",
+    "note": "Boxes per case not cited in sources used"
+  },
+  "market": {},
+  "market_source": null,
+  "checked": [],
+  "gaps": [
+    "Boxes per case unknown (not cited).",
+    "No HobbyMonitor / sold team-spot prices for 1996-97 Topps Chrome (vintage pilot)."
+  ]
+}

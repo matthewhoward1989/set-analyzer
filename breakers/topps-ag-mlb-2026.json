@@ -1,0 +1,45 @@
+{
+ "boxes": [
+  {
+   "format": "Fat Pack",
+   "Packs \u00d7 cards": "1 \u00d7 14",
+   "Cards per box": "14",
+   "Boxes per case": "\u2014",
+   "Autographs": "~1 in 74 boxes",
+   "Numbered / box": "~1 in 29 boxes",
+   "Non-numbered parallels / box": "2 in 3",
+   "Inserts / box": "~3",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Hobby Box",
+   "Packs \u00d7 cards": "24 \u00d7 8",
+   "Cards per box": "192",
+   "Boxes per case": "12",
+   "Autographs": "2 auto/relic guaranteed",
+   "Numbered / box": "~1 in 2 boxes",
+   "Non-numbered parallels / box": "~13",
+   "Inserts / box": "~41",
+   "Exclusive parallels": "6 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Value Box",
+   "Packs \u00d7 cards": "8 \u00d7 6",
+   "Cards per box": "48",
+   "Boxes per case": "40",
+   "Autographs": "~1 in 25 boxes",
+   "Numbered / box": "~1 in 8 boxes",
+   "Non-numbered parallels / box": "~3",
+   "Inserts / box": "~12",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "",
+  "fetched": "2026-10-20"
+ }
+}

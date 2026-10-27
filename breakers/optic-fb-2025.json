@@ -1,0 +1,65 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "20 \u00d7 4",
+   "Cards per box": "80",
+   "Boxes per case": "12",
+   "Exclusive parallels": "209 \u00b7 see them",
+   "lowest_ask": "$636.63"
+  },
+  {
+   "format": "H2",
+   "Packs \u00d7 cards": "4 \u00d7 8",
+   "Cards per box": "32",
+   "Boxes per case": "20",
+   "Exclusive parallels": "3 \u00b7 see them",
+   "lowest_ask": "$199.99"
+  },
+  {
+   "format": "Hobby Mega",
+   "Packs \u00d7 cards": "6 \u00d7 7",
+   "Cards per box": "42",
+   "Boxes per case": "20",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": "$109.99"
+  },
+  {
+   "format": "Hobby Blaster",
+   "Packs \u00d7 cards": "6 \u00d7 4",
+   "Cards per box": "24",
+   "Boxes per case": "20",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Target Blaster",
+   "Packs \u00d7 cards": "6 \u00d7 4",
+   "Cards per box": "24",
+   "Boxes per case": "20",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": "$96.00"
+  },
+  {
+   "format": "Walmart Blaster",
+   "Packs \u00d7 cards": "6 \u00d7 7",
+   "Cards per box": "42",
+   "Boxes per case": "20",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Walmart Mega",
+   "Packs \u00d7 cards": "6 \u00d7 7",
+   "Cards per box": "42",
+   "Boxes per case": "20",
+   "Exclusive parallels": "1 \u00b7 see them",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "",
+  "fetched": "2026-10-20"
+ }
+}

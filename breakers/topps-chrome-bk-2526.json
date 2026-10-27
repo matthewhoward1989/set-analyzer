@@ -1,0 +1,174 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "20 \u00d7 4",
+   "Cards per box": "80",
+   "Boxes per case": "12",
+   "Autographs": "1 guaranteed",
+   "Numbered / box": "~2.6",
+   "Non-numbered parallels / box": "~14",
+   "Inserts / box": "~12",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Jumbo",
+   "Packs \u00d7 cards": "12 \u00d7 11",
+   "Cards per box": "132",
+   "Boxes per case": "8",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "~4.1",
+   "Non-numbered parallels / box": "~21",
+   "Inserts / box": "~15",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Breaker Delight",
+   "Packs \u00d7 cards": "1 \u00d7 10",
+   "Cards per box": "10",
+   "Boxes per case": "6",
+   "Autographs": "2 guaranteed",
+   "Numbered / box": "~4.2",
+   "Non-numbered parallels / box": "~3.6",
+   "Inserts / box": "~2",
+   "Exclusive parallels": "14 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "First Day Issue Box",
+   "Packs \u00d7 cards": "12 \u00d7 11",
+   "Cards per box": "132",
+   "Boxes per case": "\u2014",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "~4.2",
+   "Non-numbered parallels / box": "~21",
+   "Inserts / box": "~14",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Value",
+   "Packs \u00d7 cards": "7 \u00d7 4",
+   "Cards per box": "28",
+   "Boxes per case": "40",
+   "Autographs": "~1 in 20 boxes",
+   "Numbered / box": "~1 in 3.1 boxes",
+   "Non-numbered parallels / box": "~4.5",
+   "Inserts / box": "~2.1",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Hanger",
+   "Packs \u00d7 cards": "1 \u00d7 15",
+   "Cards per box": "15",
+   "Boxes per case": "64",
+   "Autographs": "~1 in 31 boxes",
+   "Numbered / box": "~1 in 5.8 boxes",
+   "Non-numbered parallels / box": "2 in 3",
+   "Inserts / box": "~2.1",
+   "Exclusive parallels": "7 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Mega",
+   "Packs \u00d7 cards": "7 \u00d7 6",
+   "Cards per box": "42",
+   "Boxes per case": "20",
+   "Autographs": "~1 in 9.9 boxes",
+   "Numbered / box": "1 in 2",
+   "Non-numbered parallels / box": "~18",
+   "Inserts / box": "~3",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Fanatics Bulk Pack Box",
+   "Packs \u00d7 cards": "Single pack \u00b7 4 cards",
+   "Cards per box": "\u2014",
+   "Boxes per case": "\u2014",
+   "Autographs": "1 in 135 packs",
+   "Numbered / box": "1 in 20 packs",
+   "Non-numbered parallels / box": "2 in 3 packs",
+   "Inserts / box": "1 in 3.5 packs",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": ""
+  },
+  {
+   "format": "Fanatics Mega",
+   "Packs \u00d7 cards": "7 \u00d7 6",
+   "Cards per box": "42",
+   "Boxes per case": "20",
+   "Autographs": "~1 in 9.5 boxes",
+   "Numbered / box": "2 in 3",
+   "Non-numbered parallels / box": "~53",
+   "Inserts / box": "~3",
+   "Exclusive parallels": "2 \u00b7 see them",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "https://cardsmithsbreaks.com/full-checklist/2025-26-topps-chrome-basketball/",
+  "fetched": "2026-10-20"
+ },
+ "market": [
+  {
+   "format": "Hobby",
+   "boxes_per_case": 12,
+   "url": "https://www.hobbymonitor.com/breaks/2025-26-topps-chrome-basketball-hobby-case",
+   "as_of": "2026-08-21",
+   "msrp_box": 369.99,
+   "box_ask": 510,
+   "box_ask_n": 19,
+   "case_ask": 5799,
+   "case_ask_n": 4,
+   "msrp_case": 4439.88,
+   "spots": [
+    {
+     "team": "Dallas Mavericks",
+     "median_box": 305,
+     "avg_box": 300,
+     "low": 253,
+     "high": 349,
+     "n": 3
+    },
+    {
+     "team": "Charlotte Hornets",
+     "median_box": 104,
+     "avg_box": 106,
+     "low": 102,
+     "high": 109,
+     "n": 3
+    }
+   ]
+  }
+ ],
+ "market_source": "HobbyMonitor break pricing (public free tier: top 2 teams only; aggregated from breakers' listings)",
+ "checked": [
+  {
+   "name": "The Clubhouse (clubhousebreaks.com) listing #15345: 2026 Bowman Chrome Hobby case PYT",
+   "url": "https://www.clubhousebreaks.com/product/gb15345/",
+   "fetched": "2026-10-20",
+   "result": "The public page shows a $125 price but no per-team price list in its data, so no team spots were recorded."
+  },
+  {
+   "name": "Chrome Spot Lab",
+   "url": "https://chromespotlab.com/sets/2026_bowman_baseball",
+   "fetched": "2026-10-20",
+   "result": "Excluded. It is a paper (no real money) break simulator and covers 2026 Bowman (May), not Bowman Chrome."
+  },
+  {
+   "name": "HobbyMonitor break-pricing index",
+   "url": "https://www.hobbymonitor.com/breaks",
+   "fetched": "2026-10-20",
+   "result": "No break page found for 2025 Panini Prizm Football or 2025-26 O-Pee-Chee Platinum Hockey."
+  }
+ ],
+ "gaps": [
+  "Team spot prices: only the top 2 teams per format are public on HobbyMonitor (all teams sit behind Premium). No other public team-by-team price lists were found, so the case cost vs. sum-of-spots margin cannot be computed.",
+  "HobbyMonitor publishes spot prices per box. It says a full case break runs about N\u00d7 (boxes per case). Any \u00d7N figure shown is that approximation, not an observed case-break price."
+ ]
+}

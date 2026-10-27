@@ -1,0 +1,22 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "12 \u00d7 12",
+   "Cards per box": "144",
+   "Boxes per case": "12",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Chicagoland Sports Cards product listing",
+  "url": "https://www.chicagolandsportscards.com/2025-26-upper-deck-series-1-hockey-hobby-box/",
+  "fetched": "2026-10-27"
+ },
+ "market": [],
+ "market_source": "",
+ "checked": [],
+ "gaps": [
+  "No MSRP, box/case asks or team-spot prices were collected for this set."
+ ]
+}

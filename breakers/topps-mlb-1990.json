@@ -1,0 +1,24 @@
+{
+  "boxes": [
+    {
+      "format": "Wax",
+      "Packs \u00d7 cards": "36 \u00d7 16",
+      "Cards per box": "576",
+      "Boxes per case": "20",
+      "lowest_ask": ""
+    }
+  ],
+  "box_source": {
+    "name": "BaseballCardPedia \u2014 1990 Topps Distribution",
+    "url": "https://baseballcardpedia.com/index.php/1990_Topps",
+    "fetched": "2026-10-25",
+    "note": "Wax: 36 packs/box, 16 cards + gum/pack, 20 boxes/case"
+  },
+  "market": {},
+  "market_source": null,
+  "checked": [],
+  "gaps": [
+    "No HobbyMonitor / sold team-spot prices for 1990 Topps (vintage pilot).",
+    "Cello / rack / jumbo / blister / vending configs cited on BaseballCardPedia but only wax entered as primary breaker format."
+  ]
+}

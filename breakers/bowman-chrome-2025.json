@@ -1,0 +1,33 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby Box",
+   "Packs \u00d7 cards": "6 \u00d7 10",
+   "Cards per box": "60",
+   "Boxes per case": "12",
+   "Autographs": "2 guaranteed",
+   "Numbered / box": "~4",
+   "Non-numbered parallels / box": "~2",
+   "Inserts / box": "~18",
+   "Exclusive parallels": "21 \u00b7 see them",
+   "lowest_ask": "$499.99"
+  },
+  {
+   "format": "Breaker Delight Box",
+   "Packs \u00d7 cards": "1 \u00d7 10",
+   "Cards per box": "10",
+   "Boxes per case": "6",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "~3",
+   "Non-numbered parallels / box": "~1 per 31 cases",
+   "Inserts / box": "~4",
+   "Exclusive parallels": "18 \u00b7 see them",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "",
+  "fetched": "2026-10-20"
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "12 packs",
+   "Cards per box": "144",
+   "Boxes per case": "12",
+   "lowest_ask": "",
+   "Autographs": "3 per box (Beckett)",
+   "Inserts / box": "12 (Beckett)",
+   "Prizm parallels / box": "24 (Beckett)"
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "https://cardsmithsbreaks.com/full-checklist/2025-26-panini-prizm-basketball/",
+  "fetched": "2026-10-20"
+ },
+ "market": [
+  {
+   "format": "Hobby",
+   "boxes_per_case": 12,
+   "url": "https://www.hobbymonitor.com/breaks/202526-panini-prizm-basketball-checklist-hobby-box",
+   "as_of": "2026-10-12",
+   "msrp_box": 399.95,
+   "box_ask": 330,
+   "box_ask_n": 19,
+   "case_ask": null,
+   "case_ask_n": 0,
+   "msrp_case": null,
+   "spots": []
+  }
+ ],
+ "market_source": "HobbyMonitor break pricing (public free tier: top 2 teams only; aggregated from breakers' listings)",
+ "checked": [
+  {
+   "name": "The Clubhouse (clubhousebreaks.com) listing #15345: 2026 Bowman Chrome Hobby case PYT",
+   "url": "https://www.clubhousebreaks.com/product/gb15345/",
+   "fetched": "2026-10-20",
+   "result": "The public page shows a $125 price but no per-team price list in its data, so no team spots were recorded."
+  },
+  {
+   "name": "Chrome Spot Lab",
+   "url": "https://chromespotlab.com/sets/2026_bowman_baseball",
+   "fetched": "2026-10-20",
+   "result": "Excluded. It is a paper (no real money) break simulator and covers 2026 Bowman (May), not Bowman Chrome."
+  },
+  {
+   "name": "HobbyMonitor break-pricing index",
+   "url": "https://www.hobbymonitor.com/breaks",
+   "fetched": "2026-10-20",
+   "result": "No break page found for 2025 Panini Prizm Football or 2025-26 O-Pee-Chee Platinum Hockey."
+  }
+ ],
+ "gaps": [
+  "Team spot prices: only the top 2 teams per format are public on HobbyMonitor (all teams sit behind Premium). No other public team-by-team price lists were found, so the case cost vs. sum-of-spots margin cannot be computed.",
+  "HobbyMonitor publishes spot prices per box. It says a full case break runs about N\u00d7 (boxes per case). Any \u00d7N figure shown is that approximation, not an observed case-break price."
+ ]
+}

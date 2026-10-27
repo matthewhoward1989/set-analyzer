@@ -1,0 +1,20 @@
+{
+ "market": [],
+ "market_source": "",
+ "checked": [],
+ "gaps": [],
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "8 \u00d7 8",
+   "Cards per box": "64",
+   "Boxes per case": "18",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Beckett product overview (Upper Deck configuration)",
+  "url": "https://www.beckett.com/news/2025-26-upper-deck-allure-hockey/",
+  "fetched": "2026-10-27"
+ }
+}

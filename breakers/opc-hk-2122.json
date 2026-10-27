@@ -1,0 +1,20 @@
+{
+ "market": [],
+ "market_source": "",
+ "checked": [],
+ "gaps": [],
+ "boxes": [
+  {
+   "format": "Hobby",
+   "Packs \u00d7 cards": "18 \u00d7 10",
+   "Cards per box": "180",
+   "Boxes per case": "16",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardboard Connection (OPC hobby configuration: 18\u00d710, 16 boxes/case)",
+  "url": "https://www.cardboardconnection.com/2020-21-o-pee-chee-hockey",
+  "fetched": "2026-10-27"
+ }
+}

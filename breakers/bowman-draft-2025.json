@@ -1,0 +1,45 @@
+{
+ "boxes": [
+  {
+   "format": "Hobby Jumbo Box",
+   "Packs \u00d7 cards": "12 \u00d7 32",
+   "Cards per box": "384",
+   "Boxes per case": "8",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "~16",
+   "Non-numbered parallels / box": "~2",
+   "Inserts / box": "~40",
+   "Exclusive parallels": "5 \u00b7 see them",
+   "lowest_ask": "$849.99"
+  },
+  {
+   "format": "Super Jumbo Box",
+   "Packs \u00d7 cards": "5 \u00d7 120",
+   "Cards per box": "600",
+   "Boxes per case": "6",
+   "Autographs": "5 guaranteed",
+   "Numbered / box": "~11",
+   "Non-numbered parallels / box": "~2",
+   "Inserts / box": "~30",
+   "Exclusive parallels": "\u2014",
+   "lowest_ask": "$999.00"
+  },
+  {
+   "format": "Breaker Delight Box",
+   "Packs \u00d7 cards": "1 \u00d7 10",
+   "Cards per box": "10",
+   "Boxes per case": "6",
+   "Autographs": "3 guaranteed",
+   "Numbered / box": "~2",
+   "Non-numbered parallels / box": "~1 per 19\u201320 cases",
+   "Inserts / box": "~4",
+   "Exclusive parallels": "14 \u00b7 see them",
+   "lowest_ask": ""
+  }
+ ],
+ "box_source": {
+  "name": "Cardsmiths Breaks \"Pick your box\" table (street price = lowest live eBay ask)",
+  "url": "",
+  "fetched": "2026-10-20"
+ }
+}
