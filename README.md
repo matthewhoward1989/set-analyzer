@@ -1,6 +1,6 @@
 # The Set Analyzer (offline static site)
 
-GitHub Pages serves the split payloads under `data/` (`home.js`, `search.js`, `sets/`, `players/`, `teams/`). Locally, `build_site.py` still writes a monolith `data/all.js` for offline use, but that file is no longer published (it exceeded GitHub's 100MB limit).
+Open `index.html` in any browser. It works with no server and no internet connection, because all data is loaded from `data/all.js`.
 
 Pages: `index.html` (home + global search) · `sets.html` · `set.html?id=<set id>` (checklist, Top 5, team breakdown, parallels, comps, sources, gaps) · `teams.html?t=<LEAGUE>|<Team>` · `players.html?p=<Player>`.
 
