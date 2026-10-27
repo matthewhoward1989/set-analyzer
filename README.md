@@ -31,7 +31,7 @@ SSP = published hobby pack odds imply < 1 per hobby case (`odds_packs > packs_pe
 - `odds_extract.py <id> ../raw/ckd_<x>.json <url>`: Cardsmiths checklist data (`/wp-json/csb/v1/ckd/<id>` linked from the checklist page; run rates come from manufacturer odds).
 - `prose_odds.py <id> <raw page>`: fills any missing subset-level odds from Cardsmiths' "About one per X cases in Hobby" lines.
 - Hand-entered odds (e.g. O-Pee-Chee Platinum from Checklist Insider) use the same row shape with a `published` text field.
-`build_site.py` (`apply_ssp`) tags cards `ssp`, `x_cases`, `pack_odds`, `odds` = published / not in hobby / unknown. The old case-hit list survives only as `named_case_hit`.
+`build_site.py` (`apply_ssp`) tags cards `ssp`, `x_cases`, `pack_odds`, `odds` = published / unknown odds / unknown. The old case-hit list survives only as `named_case_hit`.
 
 ## Checklist Insider sets (hockey)
 `python3 extract_checklistinsider.py <id> "<Set name>" Hockey NHL ../raw/ci_<slug>.html https://www.checklistinsider.com/<slug>` parses each "<Subset> Checklist" section (card lines, "Pack odds/Odds -" lines, "Parallels:" lines) plus the product configuration. It writes `sets/<id>.json` (with hobby odds → per-case rates) and `breakers/<id>.json` (box config). If curl gets a bot check, save the page with headless Chrome `--dump-dom`.
