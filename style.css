@@ -64,3 +64,12 @@ header.top .brand .sa{color:var(--teal);text-transform:none}
 a{color:var(--link)}.gap{color:var(--coral)}
 .hero h1{color:#fff}
 button.more{display:block;min-height:44px;margin:10px auto;padding:10px 18px;font:inherit;cursor:pointer;border-radius:8px}
+
+/* --- home declutter --- */
+body.home .hero{padding:16px 0 4px}
+body.home .hero h1{font-size:26px;line-height:1.25;margin:0 0 4px}
+body.home h2{margin:14px 0 6px}
+body.home .howto{color:#b6c7da;font-size:14px;margin:12px 0 6px;max-width:720px;line-height:1.5}
+body.home .howto .more{min-height:auto;margin-left:4px}
+body.home .note{margin:8px 0 4px}
+@media(max-width:760px){body.home .hero h1{font-size:22px}}
