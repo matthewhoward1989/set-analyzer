@@ -73,3 +73,8 @@ body.home .howto{color:#b6c7da;font-size:14px;margin:12px 0 6px;max-width:720px;
 body.home .howto .more{min-height:auto;margin-left:4px}
 body.home .note{margin:8px 0 4px}
 @media(max-width:760px){body.home .hero h1{font-size:22px}}
+/* --- American flag branding (Oct 30) --- */
+header.top .brand img{width:44px;height:44px;border-radius:8px;object-fit:cover}
+body.home .hero .banner{display:block;margin:0 0 14px}
+body.home .hero .banner img{display:block;width:100%;height:auto;aspect-ratio:3/1;border-radius:12px;border:2px solid #fff;box-shadow:0 4px 18px rgba(0,0,0,.35)}
+@media(max-width:760px){body.home .hero .banner img{border-radius:8px}}
